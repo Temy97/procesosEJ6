@@ -9,7 +9,7 @@ public class Cuenta {
 
 	public void retirarDinero(String nombre, int cantidad) {
 		try {
-			System.out.println(nombre + " va a retirar dinero: " + cantidad + "€ (saldo actual: " + saldo);
+			System.out.println(nombre + " va a retirar dinero: " + cantidad + "€ (saldo actual: " + saldo + ")");
 			Thread.sleep(500);
 			if(saldo >= cantidad) {
 				saldo -= cantidad;
