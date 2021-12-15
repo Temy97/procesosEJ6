@@ -7,7 +7,7 @@ public class Cuenta {
 		this.saldo = saldo;
 	}
 
-	public void retirarDinero(String nombre, int cantidad) {
+	public synchronized void retirarDinero(String nombre, int cantidad) {
 		try {
 			System.out.println(nombre + " va a retirar dinero: " + cantidad + "€ (saldo actual: " + saldo + ")");
 			Thread.sleep(500);
